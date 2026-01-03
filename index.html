@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="精美照片展示画廊 - 温暖记忆，美好瞬间">
+    <title>光影画廊 | 温暖记忆</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="logo">
+            <span class="logo-icon">📷</span>
+            <span class="logo-text">光影画廊</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#gallery">画廊</a></li>
+            <li><a href="#about">关于</a></li>
+            <li><a href="#contact">联系</a></li>
+        </ul>
+    </nav>
+
+    <!-- 主要区域 - 照片画廊 -->
+    <main id="gallery" class="gallery-section">
+        <div class="gallery-header">
+            <h1>温暖记忆</h1>
+            <p>每一张照片都是时光的印记，每一个瞬间都值得被珍藏</p>
+        </div>
+
+        <div class="gallery-container">
+            <!-- 第一行 - 从左往右滚动 -->
+            <div class="photo-row scroll-left">
+                <div class="photo-track">
+                    <div class="photo-card">
+                        <div class="photo-frame">
+                            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop" alt="山脉风光">
+                            <div class="photo-overlay">
+                                <span>山脉风光</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo-card">
+                        <div class="photo-frame">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop" alt="海边日落">
+                            <div class="photo-overlay">
+                                <span>海边日落</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo-card">
+                        <div class="photo-frame">
+                            <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=400&h=300&fit=crop" alt="湖光山色">
+                            <div class="photo-overlay">
+                                <span>湖光山色</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo-card">
+                        <div class="photo-frame">
+                            <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=400&h=300&fit=crop" alt="森林秘境">
+                            <div class="photo-overlay">
+                                <span>森林秘境</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo-card">
+                        <div class="photo-frame">
+                            <img src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=400&h=300&fit=crop" alt="瀑布奇观">
+                            <div class="photo-overlay">
+                                <span>瀑布奇观</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo-card">
+                        <div class="photo-frame">
+                            <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=400&h=300&fit=crop" alt="雾海仙境">
+                            <div class="photo-overlay">
+                                <span>雾海仙境</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 复制一份用于无缝滚动 -->
+                    <div class="photo-card">
+                        <div class="photo-frame">
+                            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop" alt="山脉风光">
+                            <div class="photo-overlay">
+                                <span>山脉风光</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo-card">
+                        <div class="photo-frame">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop" alt="海边日落">
+                            <div class="photo-overlay">
+                                <span>海边日落</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo-card">
+                        <div class="photo-frame">
+                            <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=400&h=300&fit=crop" alt="湖光山色">
+                            <div class="photo-overlay">
+                                <span>湖光山色</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo-card">
+                        <div class="photo-frame">
+                            <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=400&h=300&fit=crop" alt="森林秘境">
+                            <div class="photo-overlay">
+                                <span>森林秘境</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo-card">
+                        <div class="photo-frame">
+                            <img src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=400&h=300&fit=crop" alt="瀑布奇观">
+                            <div class="photo-overlay">
+                                <span>瀑布奇观</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo-card">
+                        <div class="photo-frame">
+                            <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=400&h=300&fit=crop" alt="雾海仙境">
+                            <div class="photo-overlay">
+                                <span>雾海仙境</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 第二行 - 从右往左滚动 -->
+            <div class="photo-row scroll-right">
+                <div class="photo-track">
+                    <div class="photo-card">
+                        <div class="photo-frame">
+                            <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=400&h=300&fit=crop" alt="城市夜景">
+                            <div class="photo-overlay">
+                                <span>城市夜景</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo-card">
+                        <div class="photo-frame">
+                            <img src="https://images.unsplash.com/photo-1444723121867-7a241cacace9?w=400&h=300&fit=crop" alt="都市黄昏">
+                            <div class="photo-overlay">
+                                <span>都市黄昏</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo-card">
+                        <div class="photo-frame">
+                            <img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=400&h=300&fit=crop" alt="摩天大楼">
+                            <div class="photo-overlay">
+                                <span>摩天大楼</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo-card">
+                        <div class="photo-frame">
+                            <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=400&h=300&fit=crop" alt="街头风景">
+                            <div class="photo-overlay">
+                                <span>街头风景</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo-card">
+                        <div class="photo-frame">
+                            <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=400&h=300&fit=crop" alt="城市建筑">
+                            <div class="photo-overlay">
+                                <span>城市建筑</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo-card">
+                        <div class="photo-frame">
+                            <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=400&h=300&fit=crop" alt="天际线">
+                            <div class="photo-overlay">
+                                <span>天际线</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 复制一份用于无缝滚动 -->
+                    <div class="photo-card">
+                        <div class="photo-frame">
+                            <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=400&h=300&fit=crop" alt="城市夜景">
+                            <div class="photo-overlay">
+                                <span>城市夜景</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo-card">
+                        <div class="photo-frame">
+                            <img src="https://images.unsplash.com/photo-1444723121867-7a241cacace9?w=400&h=300&fit=crop" alt="都市黄昏">
+                            <div class="photo-overlay">
+                                <span>都市黄昏</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo-card">
+                        <div class="photo-frame">
+                            <img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=400&h=300&fit=crop" alt="摩天大楼">
+                            <div class="photo-overlay">
+                                <span>摩天大楼</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo-card">
+                        <div class="photo-frame">
+                            <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=400&h=300&fit=crop" alt="街头风景">
+                            <div class="photo-overlay">
+                                <span>街头风景</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo-card">
+                        <div class="photo-frame">
+                            <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=400&h=300&fit=crop" alt="城市建筑">
+                            <div class="photo-overlay">
+                                <span>城市建筑</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo-card">
+                        <div class="photo-frame">
+                            <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=400&h=300&fit=crop" alt="天际线">
+                            <div class="photo-overlay">
+                                <span>天际线</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 第三行 - 从左往右滚动 -->
+            <div class="photo-row scroll-left">
+                <div class="photo-track">
+                    <div class="photo-card">
+                        <div class="photo-frame">
+                            <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=400&h=300&fit=crop" alt="花海">
+                            <div class="photo-overlay">
+                                <span>花海</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo-card">
+                        <div class="photo-frame">
+                            <img src="https://images.unsplash.com/photo-1518882605630-8b17bb1e28ee?w=400&h=300&fit=crop" alt="春意盎然">
+                            <div class="photo-overlay">
+                                <span>春意盎然</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo-card">
+                        <div class="photo-frame">
+                            <img src="https://images.unsplash.com/photo-1462275646964-a0e3571f4f7f?w=400&h=300&fit=crop" alt="金色秋天">
+                            <div class="photo-overlay">
+                                <span>金色秋天</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo-card">
+                        <div class="photo-frame">
+                            <img src="https://images.unsplash.com/photo-1508193638397-1c4234db14d8?w=400&h=300&fit=crop" alt="秋叶飘零">
+                            <div class="photo-overlay">
+                                <span>秋叶飘零</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo-card">
+                        <div class="photo-frame">
+                            <img src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=400&h=300&fit=crop" alt="蝴蝶花间">
+                            <div class="photo-overlay">
+                                <span>蝴蝶花间</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo-card">
+                        <div class="photo-frame">
+                            <img src="https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?w=400&h=300&fit=crop" alt="松林雪景">
+                            <div class="photo-overlay">
+                                <span>松林雪景</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 复制一份用于无缝滚动 -->
+                    <div class="photo-card">
+                        <div class="photo-frame">
+                            <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=400&h=300&fit=crop" alt="花海">
+                            <div class="photo-overlay">
+                                <span>花海</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo-card">
+                        <div class="photo-frame">
+                            <img src="https://images.unsplash.com/photo-1518882605630-8b17bb1e28ee?w=400&h=300&fit=crop" alt="春意盎然">
+                            <div class="photo-overlay">
+                                <span>春意盎然</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo-card">
+                        <div class="photo-frame">
+                            <img src="https://images.unsplash.com/photo-1462275646964-a0e3571f4f7f?w=400&h=300&fit=crop" alt="金色秋天">
+                            <div class="photo-overlay">
+                                <span>金色秋天</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo-card">
+                        <div class="photo-frame">
+                            <img src="https://images.unsplash.com/photo-1508193638397-1c4234db14d8?w=400&h=300&fit=crop" alt="秋叶飘零">
+                            <div class="photo-overlay">
+                                <span>秋叶飘零</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo-card">
+                        <div class="photo-frame">
+                            <img src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=400&h=300&fit=crop" alt="蝴蝶花间">
+                            <div class="photo-overlay">
+                                <span>蝴蝶花间</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo-card">
+                        <div class="photo-frame">
+                            <img src="https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?w=400&h=300&fit=crop" alt="松林雪景">
+                            <div class="photo-overlay">
+                                <span>松林雪景</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 第四行 - 从右往左滚动 -->
+            <div class="photo-row scroll-right">
+                <div class="photo-track">
+                    <div class="photo-card">
+                        <div class="photo-frame">
+                            <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=400&h=300&fit=crop" alt="日本神社">
+                            <div class="photo-overlay">
+                                <span>日本神社</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo-card">
+                        <div class="photo-frame">
+                            <img src="https://images.unsplash.com/photo-1528164344705-47542687000d?w=400&h=300&fit=crop" alt="欧洲小镇">
+                            <div class="photo-overlay">
+                                <span>欧洲小镇</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo-card">
+                        <div class="photo-frame">
+                            <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=400&h=300&fit=crop" alt="巴黎铁塔">
+                            <div class="photo-overlay">
+                                <span>巴黎铁塔</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo-card">
+                        <div class="photo-frame">
+                            <img src="https://images.unsplash.com/photo-1504893524553-b855bce32c67?w=400&h=300&fit=crop" alt="威尼斯水城">
+                            <div class="photo-overlay">
+                                <span>威尼斯水城</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo-card">
+                        <div class="photo-frame">
+                            <img src="https://images.unsplash.com/photo-1523592121529-f6dde35f079e?w=400&h=300&fit=crop" alt="古镇风情">
+                            <div class="photo-overlay">
+                                <span>古镇风情</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo-card">
+                        <div class="photo-frame">
+                            <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=400&h=300&fit=crop" alt="意大利海岸">
+                            <div class="photo-overlay">
+                                <span>意大利海岸</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 复制一份用于无缝滚动 -->
+                    <div class="photo-card">
+                        <div class="photo-frame">
+                            <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=400&h=300&fit=crop" alt="日本神社">
+                            <div class="photo-overlay">
+                                <span>日本神社</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo-card">
+                        <div class="photo-frame">
+                            <img src="https://images.unsplash.com/photo-1528164344705-47542687000d?w=400&h=300&fit=crop" alt="欧洲小镇">
+                            <div class="photo-overlay">
+                                <span>欧洲小镇</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo-card">
+                        <div class="photo-frame">
+                            <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=400&h=300&fit=crop" alt="巴黎铁塔">
+                            <div class="photo-overlay">
+                                <span>巴黎铁塔</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo-card">
+                        <div class="photo-frame">
+                            <img src="https://images.unsplash.com/photo-1504893524553-b855bce32c67?w=400&h=300&fit=crop" alt="威尼斯水城">
+                            <div class="photo-overlay">
+                                <span>威尼斯水城</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo-card">
+                        <div class="photo-frame">
+                            <img src="https://images.unsplash.com/photo-1523592121529-f6dde35f079e?w=400&h=300&fit=crop" alt="古镇风情">
+                            <div class="photo-overlay">
+                                <span>古镇风情</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo-card">
+                        <div class="photo-frame">
+                            <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=400&h=300&fit=crop" alt="意大利海岸">
+                            <div class="photo-overlay">
+                                <span>意大利海岸</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 关于区域 -->
+    <section id="about" class="about-section">
+        <div class="about-content">
+            <h2>关于光影画廊</h2>
+            <p>我们致力于捕捉生活中最美好的瞬间，用镜头记录温暖的记忆。每一张照片都承载着独特的故事，等待着与你分享。</p>
+            <div class="about-stats">
+                <div class="stat-item">
+                    <span class="stat-number">1000+</span>
+                    <span class="stat-label">精选照片</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">摄影师</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">30+</span>
+                    <span class="stat-label">国家地区</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系区域 -->
+    <section id="contact" class="contact-section">
+        <div class="contact-content">
+            <h2>联系我们</h2>
+            <p>有任何问题或合作意向？欢迎随时与我们取得联系</p>
+            <a href="mailto:hello@gallery.com" class="contact-btn">发送邮件</a>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <p>© 2024 光影画廊. 用心记录每一个美好瞬间</p>
+    </footer>
+</body>
+</html>
