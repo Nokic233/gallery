@@ -3,37 +3,44 @@ import images from './images.js';
 const galleryContainer = document.getElementById('gallery-grid');
 
 /**
- * 极简渲染逻辑：直接展示 images.js 中的所有图片
+ * 渲染图片：支持 url 为数组格式
  */
 function renderGallery() {
     if (!galleryContainer) return;
 
     galleryContainer.innerHTML = '';
 
-    images.forEach((img, index) => {
-        const item = document.createElement('div');
-        item.className = 'gallery-item';
+    let imageIndex = 0;
 
-        // 交错动画延迟
-        item.style.animationDelay = `${index * 0.05}s`;
+    images.forEach(group => {
+        // url 可以是数组或单个字符串
+        const urls = Array.isArray(group.url) ? group.url : [group.url];
 
-        const imageElement = new Image();
-        imageElement.src = img.url;
-        imageElement.alt = img.title;
-        imageElement.loading = 'lazy';
+        urls.forEach(url => {
+            const item = document.createElement('div');
+            item.className = 'gallery-item';
 
-        // 图片加载完成后的处理
-        imageElement.onload = () => {
-            item.classList.add('is-loaded');
-        };
+            // 交错动画延迟
+            item.style.animationDelay = `${imageIndex * 0.05}s`;
 
-        item.innerHTML = `
-            <div class="item-caption">${img.title}</div>
-        `;
-        // 将图片对象插入到标题之前
-        item.insertBefore(imageElement, item.firstChild);
+            const imageElement = new Image();
+            imageElement.src = url;
+            imageElement.alt = group.title;
+            imageElement.loading = 'lazy';
 
-        galleryContainer.appendChild(item);
+            // 图片加载完成后的处理
+            imageElement.onload = () => {
+                item.classList.add('is-loaded');
+            };
+
+            item.innerHTML = `
+                <div class="item-caption">${group.title}</div>
+            `;
+            item.insertBefore(imageElement, item.firstChild);
+
+            galleryContainer.appendChild(item);
+            imageIndex++;
+        });
     });
 }
 
