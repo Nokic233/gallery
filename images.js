@@ -3,7 +3,7 @@
  * url 为数组格式，可以存放多张图片
  */
 
-const images = [
+window.images = [
     {
         url: [
             'https://wx2.sinaimg.cn/mw2000/008B1ft6gy1i8tz2dakitj34mo3347wn.jpg',
@@ -22,5 +22,3 @@ const images = [
         title: '跨年~',
     },
 ];
-
-export default images;

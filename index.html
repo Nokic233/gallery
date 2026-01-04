@@ -4,7 +4,10 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>卢昱晓</title>
-        <meta name="description" content="A graffiti-style visual diary." />
+        <meta
+            name="description"
+            content="A graffiti-style visual diary with interactive mouse trail effect."
+        />
         <link rel="icon" type="image/png" href="favicon.png" />
 
         <!-- Fonts: Graffiti & Handwriting -->
@@ -19,14 +22,11 @@
     </head>
     <body>
         <div id="app">
-            <!-- Main Masonry Content -->
-            <main class="content-wrapper">
-                <div id="gallery-grid" class="masonry-grid">
-                    <!-- Injected by JS -->
-                </div>
-            </main>
+            <!-- Interactive Mouse Trail Canvas -->
+            <div id="mouse-trail-container"></div>
         </div>
 
-        <script type="module" src="main.js"></script>
+        <script src="images.js"></script>
+        <script src="main.js"></script>
     </body>
 </html>
