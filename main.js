@@ -23,7 +23,7 @@ let lastSpawnY = 0;
 let lastImageWidth = 300; // 上一张图片的宽度
 let lastImageHeight = 400; // 上一张图片的高度（图片加载后更新）
 const SPAWN_INTERVAL = 200; // 时间间隔（毫秒）
-const MAX_IMAGES = 5; // 页面上最多保留的图片数量
+const MAX_IMAGES = 50; // 页面上最多保留的图片数量
 
 // 当前图片索引（循环使用）
 let currentImageIndex = 0;
